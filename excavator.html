@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excavator Model</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-container, .bottom-image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .image-container img, .bottom-image-container img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .info-box {
+            width: 45%;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .info-box h2 {
+            color: darkgray;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-box ul li {
+            margin: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .info-box ul li::before {
+            content: "*";
+            position: absolute;
+            left: 0;
+            color: grey;
+            font-weight: bold;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background: gray;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background: darkgrey;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container w3-content">
+        <h1 class="w3-center w3-jumbo">Digital Model of Excavator</h1>
+
+        <!-- Top Image Section -->
+        <div class="image-container">
+            <img src="Excavator.png" alt="Excavator Model Front">
+        </div>
+
+        <!-- First Row of Info Boxes -->
+        <div class="info-container">
+            <div class="info-box">
+                <h2>What?</h2>
+                <ul>
+                    <li>Develop a <strong>CAD model</strong> of an excavator considering design constraints.</li>
+                    <li>Check for <strong>robustness</strong> and <strong>tolerancing</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h2>How?</h2>
+                <ul>
+                    <li>Used <strong>solid, surface</strong>, and <strong>sheet metal</strong> features on <strong>CATIA V5</strong>.</li>
+                    <li>Applied <strong>GD&T</strong> to all drawings.</li>
+                    <li>Incorporated <strong>DFA</strong> principles for efficiency.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h2>Results</h2>
+                <p>A complete model of an excavator along with a digging simulation.</p>
+            </div>
+        </div>
+
+        <!-- Second Image Section -->
+        <div class="bottom-image-container">
+            <img src="Excavator_3.png" alt="Excavator Cabin">
+            <img src="Excavator_4.JPG" alt="Excavator Blueprint">
+        </div>
+
+        <!-- Second Row of Info Boxes -->
+        <div class="info-container">
+            <div class="info-box">
+                <ul>
+                    <li>Developed interior cabin design.</li>
+                    <li>Parametrized the seats to fit mannequins of different size.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li>Created product manufacturing information.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="button-container">
+            <a href="index.html" class="button"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+        </div>
+    </div>
+
+</body>
+</html>
